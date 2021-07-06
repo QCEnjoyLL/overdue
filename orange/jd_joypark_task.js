@@ -26,7 +26,7 @@ if ($.isNode()) {
 }
 
 // 汪汪乐园 助力作者2个号，放心一般都是满的，爱护作者，人人有责
-$.invitePinTaskList = ['','']
+$.invitePinTaskList = ['YMj0o1gbTbesPKE5hojYog','YMj0o1gbTbesPKE5hojYog']
 
 const JD_API_HOST = `https://api.m.jd.com/client.action`;
 message = ""
