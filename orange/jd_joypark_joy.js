@@ -37,7 +37,7 @@ message = ""
   }
   for (let i = 0; i < cookiesArr.length; i++) {
     if (process.env.JOYPARK_JOY_START && i == process.env.JOYPARK_JOY_START){
-      console.log(`\n汪汪乐园养joy 只运行 ${process.env.JD_CFD_LHJ ? process.env.JD_CFD_LHJ : 1} 个Cookie\n`);
+      console.log(`\n汪汪乐园养joy 只运行 ${process.env.JOYPARK_JOY_START ? process.env.JOYPARK_JOY_START : 10} 个Cookie\n`);
       break
     }
 

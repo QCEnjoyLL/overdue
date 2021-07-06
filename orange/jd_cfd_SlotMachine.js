@@ -2,8 +2,9 @@
 变量
 JD_CFD_LHJ 只跑前几个Cookie
 
-[Script]
-cron "10 7 * * *" script-path=https://x.js,tag=财富岛老虎机
+[task_local]
+#京喜财富岛老虎机
+59 9 * * * https://raw.githubusercontent.com/QCEnjoyLL/overdue/master/orange/jd_cfd_SlotMachine.js, tag=>京喜财富岛老虎机, enabled=true
  */
 
 !function (t, r) {
