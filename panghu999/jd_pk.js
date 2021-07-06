@@ -1,7 +1,7 @@
 /*
 京享值PK
 [task_local]
-0 10,11 * * *
+0 10,11 * * * https://raw.githubusercontent.com/QCEnjoyLL/overdue/master/panghu999/jd_pk.js, tag=京享值PK, enabled=true
 
  */
 const $ = new Env('京享值PK');
