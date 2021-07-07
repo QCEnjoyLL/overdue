@@ -7,7 +7,7 @@
 ============Quantumultx===============
 [task_local]
 #汪汪乐园开工位
-20 9 * * * jd_joypark_open.js, tag=汪汪乐园开工位, img-url=https://raw.githubusercontent.com/tsukasa007/icon/master/jd_joypark_open.png, enabled=true
+//20 9 * * * jd_joypark_open.js, tag=汪汪乐园开工位, img-url=https://raw.githubusercontent.com/tsukasa007/icon/master/jd_joypark_open.png, enabled=true
 
 ================Loon==============
 [Script]
