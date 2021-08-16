@@ -394,7 +394,7 @@ function getDeskGoodDetails() {
     // const url = `${JD_API_HOST}/getDeskGoodDetails`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/getDeskGoodDetails?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/getDeskGoodDetails?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -421,7 +421,7 @@ function followScan(sku) {
       "reqSource": "h5",
       sku
     }
-    const url = `${JD_API_HOST}/common/pet/scan?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/scan?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.post(taskPostUrl(url, JSON.stringify(body), reqSource, host, 'application/json'), (err, resp, data) => {
       try {
         if (err) {
@@ -443,7 +443,7 @@ function scanMarket(type, body, cType = 'application/json') {
     // const url = `${weAppUrl}/${type}`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'weapp';
-    const url = `${JD_API_HOST}/common/pet/${type}?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/${type}?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     if (cType === 'application/json') {
       body = JSON.stringify(body)
     }
@@ -468,7 +468,7 @@ function appScanMarket(type, body) {
     // const url = `${JD_API_HOST}/${type}`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/${type}?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/${type}?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.post(taskPostUrl(url, JSON.stringify(body), reqSource, host, 'application/json'), (err, resp, data) => {
       try {
         if (err) {
@@ -492,7 +492,7 @@ function sign() {
     // const url = `${weAppUrl}/getFood?reqSource=weapp&taskType=${type}`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/sign?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F&taskType=SignEveryDay`
+    const url = `${JD_API_HOST}/common/pet/sign?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P&taskType=SignEveryDay`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -515,7 +515,7 @@ function getFood(type) {
     // const url = `${weAppUrl}/getFood?reqSource=weapp&taskType=${type}`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'weapp';
-    const url = `${JD_API_HOST}/common/pet/getFood?reqSource=weapp&taskType=${type}&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/getFood?reqSource=weapp&taskType=${type}&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -538,9 +538,9 @@ function iconClick(type, id) {
     // const url = `${weAppUrl}/getFood?reqSource=weapp&taskType=${type}`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'weapp';
-    // ${JD_API_HOST}/common/pet/icon/click?iconCode=follow_channel&linkAddr=363&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F
+    // ${JD_API_HOST}/common/pet/icon/click?iconCode=follow_channel&linkAddr=363&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P
     // console.log(type, id)
-    const url = `${JD_API_HOST}/common/pet/icon/click?iconCode=${type}&linkAddr=${id}&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/icon/click?iconCode=${type}&linkAddr=${id}&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -563,8 +563,8 @@ function followShop(shopId) {
     const body = `shopId=${shopId}`;
     const reqSource = 'weapp';
     const host = 'jdjoy.jd.com';
-    // ${JD_API_HOST}/common/pet/followShop?validate=59d15039c5ad4d24af48fcec798962bf&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F
-    const url = `${JD_API_HOST}/common/pet/followShop?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    // ${JD_API_HOST}/common/pet/followShop?validate=59d15039c5ad4d24af48fcec798962bf&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P
+    const url = `${JD_API_HOST}/common/pet/followShop?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.post(taskPostUrl(url, body, reqSource, host,'application/x-www-form-urlencoded'), (err, resp, data) => {
       try {
         if (err) {
@@ -585,7 +585,7 @@ function enterRoom() {
     // const url = `${weAppUrl}/enterRoom/h5?reqSource=weapp&invitePin=&openId=`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'weapp';
-    const url = `${JD_API_HOST}/common/pet/enterRoom/h5?reqSource=h5&invitePin=&openId=&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/enterRoom/h5?reqSource=h5&invitePin=&openId=&invokeKey=ztmFUCxcPMNyUq0P`
     $.post({...taskUrl(url, host, reqSource),body:'{}'}, (err, resp, data) => {
       try {
         if (err) {
@@ -613,7 +613,7 @@ function appGetPetTaskConfig() {
     // const url = `${JD_API_HOST}/getPetTaskConfig?reqSource=h5`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/getPetTaskConfig?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/getPetTaskConfig?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -639,7 +639,7 @@ function feedPets(feedNum) {
     // const url = `${weAppUrl}/feed?feedCount=${feedNum}&reqSource=weapp`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'weapp';
-    const url = `${JD_API_HOST}/common/pet/feed?feedCount=${feedNum}&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/feed?feedCount=${feedNum}&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), async (err, resp, data) => {
       try {
         if (err) {
@@ -691,7 +691,7 @@ function getPetTaskConfig() {
     // const reqSource = 'h5';
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}//common/pet/getPetTaskConfig?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}//common/pet/getPetTaskConfig?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -714,7 +714,7 @@ function getPetRace() {
     // const url = `${JD_API_HOST}/combat/detail/v2?help=false`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/combat/detail/v2?help=false&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/combat/detail/v2?help=false&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -737,7 +737,7 @@ function getRankList() {
   return new Promise(resolve => {
     // const url = `${JD_API_HOST}/combat/getRankList`;
     $.raceUsers = [];
-    const url = `${JD_API_HOST}/common/pet/combat/getRankList?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/combat/getRankList?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, `jdjoy.jd.com`, 'h5'), (err, resp, data) => {
       try {
         if (err) {
@@ -766,7 +766,7 @@ function runMatch(teamLevel, timeout = 10000) {
     // const url = `${JD_API_HOST}/combat/match?teamLevel=${teamLevel}`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/combat/match?teamLevel=${teamLevel}&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/combat/match?teamLevel=${teamLevel}&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -790,7 +790,7 @@ function getBackupInfo() {
     // const url = `${JD_API_HOST}/combat/getBackupInfo`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/combat/getBackupInfo?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/combat/getBackupInfo?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -812,7 +812,7 @@ function getBackupInfo() {
 function getWinCoin() {
   return new Promise(resolve => {
     // const url = `${weAppUrl}/combat/detail/v2?help=false&reqSource=weapp`;
-    const url = `${JD_API_HOST}/common/pet/combat/detail/v2?help=false&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/combat/detail/v2?help=false&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, 'jdjoy.jd.com', `h5`), (err, resp, data) => {
       try {
         if (err) {
@@ -838,7 +838,7 @@ function receiveJoyRunAward() {
     // const url = `${JD_API_HOST}/combat/receive`;
     const host = `jdjoy.jd.com`;
     const reqSource = 'h5';
-    const url = `${JD_API_HOST}/common/pet/combat/receive?reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/combat/receive?reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, host, reqSource), (err, resp, data) => {
       try {
         if (err) {
@@ -881,7 +881,7 @@ async function energySupplyStation(showOrder) {
 function getSupplyInfo(showOrder) {
   return new Promise(resolve => {
     // const url = `${weAppUrl}/combat/getSupplyInfo?showOrder=${showOrder}`;
-    const url = `${JD_API_HOST}/common/pet/combat/getSupplyInfo?showOrder=${showOrder}&reqSource=h5&invokeKey=qRKHmL4sna8ZOP9F`
+    const url = `${JD_API_HOST}/common/pet/combat/getSupplyInfo?showOrder=${showOrder}&reqSource=h5&invokeKey=ztmFUCxcPMNyUq0P`
     $.get(taskUrl(url, 'jdjoy.jd.com', `weapp`), (err, resp, data) => {
       try {
         if (err) {
